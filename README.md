@@ -29,7 +29,7 @@ ___picture( of the charts )
 * for more detail on API check the __url( the git hub page )API documentation
 
 # Requirements
-here is some requirements for installing it ( with some helpfull links ):
+here is some requirements for installing this project ( with some helpfull links ):
 - <a href="https://www.python.org/downloads/"> python v3 + </a>
 - <a href="https://pip.pypa.io/en/stable/installation/"> pip v2 + </a>
 - <a href="https://virtualenv.pypa.io/en/latest/installation.html"> vertual-env v20.25.0 + </a>
