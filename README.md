@@ -77,19 +77,19 @@ source venv/bin/activate
 ```
 &nbsp;
 
-4. install all the dependencies from requirements.txt 
+5. install all the dependencies from requirements.txt 
 ```command
 pip install -r requirements.txt
 ```
 &nbsp;
 
-4. go to website folder 
+6. go to website folder 
 ```command
 cd website
 ```
 &nbsp;
 
-4. run it from localhost
+7. run it from localhost
 > [!WARNING]
 > if you have python v2 or lower we highly saggest that you upgrade to v3
 ```command
@@ -97,7 +97,7 @@ python3 manage.py runserver
 ```
 &nbsp;
 
-4. go to your favarote Web browser with this url
+8. go to your favarote Web browser with this url
 ```command
 http://127.0.0.1:8000/
 ```
