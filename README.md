@@ -42,7 +42,7 @@ here is some requirements for installing this project ( with some helpfull links
 :---: | :---: | :---: | :---: 
 Support | ✅ | ✅ | ✅
 
-- <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#linux-and-macos">installing with Linux</a>
+- <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#linux-and-macos">installing with Linux or MacOs</a>
 - <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#windows">installing with Windows</a>
 
 
