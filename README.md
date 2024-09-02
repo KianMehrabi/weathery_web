@@ -42,11 +42,15 @@ here is some requirements for installing this project ( with some helpfull links
 :---: | :---: | :---: | :---: 
 Support | ✅ | ✅ | ✅
 
-- <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#linux">installing with Linux</a>
+- <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#linux-and-macos">installing with Linux</a>
 - <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#windows">installing with Windows</a>
-- <a href="https://github.com/KianMehrabi/weathery_web?tab=readme-ov-file#macos">installing with MacOs</a>
 
-## Linux
+
+
+
+
+
+## Linux and macos
 
 1. clone the project ( and star it please )
 ```git
@@ -103,12 +107,64 @@ http://127.0.0.1:8000/
 ```
 &nbsp;
 
+
+
+
+
+
 ## Windows
-1. first make a vertual-env in you cli of your choice
-  please make me happy
+1. clone the project ( and star it please )
+```git
+git clone https://github.com/KianMehrabi/weathery_web.git
+```
+&nbsp;
 
+2. go to the project folder
+```command
+cd weathery_web
+```
+&nbsp;
 
-## MacOs
-1. first make a vertual-env in you cli of your choice
-  please make me happy
+3. make a virtual Environment in you Local Computer
+> [!NOTE]
+> i am using virtualenv you can use others if you want
+> see <a href="https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/"> for installing the virtual Environment </a>
+```command
+python -m venv venv
+```
+&nbsp;
+
+4. then activate that virtual Environment in you Local Computer
+> [!IMPORTANT]
+> you have to close the cli ( and Re-open it ) to use it normaly again
+```command
+.\venv\Scripts\activate
+```
+&nbsp;
+
+5. install all the dependencies from requirements.txt 
+```command
+pip install -r requirements.txt
+```
+&nbsp;
+
+6. go to website folder 
+```command
+cd website
+```
+&nbsp;
+
+7. run it from localhost
+> [!WARNING]
+> if you have python v2 or lower we highly saggest that you upgrade to v3
+```command
+python3 manage.py runserver
+```
+&nbsp;
+
+8. go to your favarote Web browser with this url
+```command
+http://127.0.0.1:8000/
+```
+&nbsp;
 
