@@ -28,7 +28,87 @@ ___picture( of the charts )
 * more detail on the __url( the git hub page )afisioal documentation of Weathery_web
 * for more detail on API check the __url( the git hub page )API documentation
 
-# installazation for developers
- pass
+# Requirements
+here is some requirements for installing it ( with some helpfull links ):
+- <a href="https://www.python.org/downloads/"> python v3 + </a>
+- <a href="https://pip.pypa.io/en/stable/installation/"> pip v2 + </a>
+- <a href="https://virtualenv.pypa.io/en/latest/installation.html"> vertual-env v20.25.0 + </a>
 
-#
+# installazation for develepors
+
+**blow is a list of Oprating Systems we support:**
+
+&nbsp; | Linux | Windows | MacOs  
+:---: | :---: | :---: | :---: 
+Support | ✅ | ✅ | ✅
+
+- <a href="https://github.com/KianMehrabi/weathery_web/edit/main/README.md#linux">installing with Linux</a>
+- <a href="https://github.com/KianMehrabi/weathery_web/edit/main/README.md#windows">installing with Windows</a>
+- <a href="https://github.com/KianMehrabi/weathery_web/edit/main/README.md#macos">installing with MacOs</a>
+
+## Linux
+
+1. clone the project ( and star it please )
+```git
+git clone https://github.com/KianMehrabi/weathery_web.git
+```
+&nbsp;
+
+2. go to the project folder
+```command
+cd weathery_web
+```
+&nbsp;
+
+3. make a virtual Environment in you Local Computer
+> [!NOTE]
+> i am using virtualenv you can use others if you want
+> see <a href="https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/"> for installing the virtual Environment </a>
+```command
+python -m venv venv
+```
+&nbsp;
+
+4. then activate that virtual Environment in you Local Computer
+> [!IMPORTANT]
+> you have to close the cli ( and Re-open it ) to use it normaly again
+```command
+source venv/bin/activate
+```
+&nbsp;
+
+4. install all the dependencies from requirements.txt 
+```command
+pip install -r requirements.txt
+```
+&nbsp;
+
+4. go to website folder 
+```command
+cd website
+```
+&nbsp;
+
+4. run it from localhost
+> [!WARNING]
+> if you have python v2 or lower we highly saggest that you upgrade to v3
+```command
+python3 manage.py runserver
+```
+&nbsp;
+
+4. go to your favarote Web browser with this url
+```command
+http://127.0.0.1:8000/
+```
+&nbsp;
+
+## Windows
+1. first make a vertual-env in you cli of your choice
+  please make me happy
+
+
+## MacOs
+1. first make a vertual-env in you cli of your choice
+  please make me happy
+
