@@ -16,7 +16,7 @@ and Users but acceseble for everyone that has a working internet connection .
 - [x] Beautifull Visual charts
 - [x] Weather Support of 100% of Cities all around the world
 - [x] Great Documentation For Developers
-- [x] Great API`s For Developers
+- [x] Great API Documentation For Developers
 
 ## Usage
 just go to the __afisioall weathery web website__ to harness the power
