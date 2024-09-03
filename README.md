@@ -38,7 +38,7 @@ here is some requirements for installing this project ( with some helpfull links
 
 **blow is a list of Oprating Systems we support:**
 
-&nbsp; | Linux | Windows | MacOs  
+  OS  | Linux | Windows | MacOs  
 :---: | :---: | :---: | :---: 
 Support | ✅ | ✅ | ✅
 
