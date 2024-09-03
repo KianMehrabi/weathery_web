@@ -168,3 +168,18 @@ http://127.0.0.1:8000/
 ```
 &nbsp;
 
+
+# Contributions
+before Forking please make sure to Submit a Issues with the solved problem Explained , you can start with <a href="#"> Known Issues Section </a>
+
+&nbsp;
+
+# Known Issues
+- not completed document
+- not completed api document
+- no django web wrapper
+- no integration for api
+- no actual website 
+
+# like this project ?
+make sure to __star__ this __repo__ 🙏
