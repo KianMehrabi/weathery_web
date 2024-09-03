@@ -170,7 +170,7 @@ http://127.0.0.1:8000/
 
 
 # Contributions
-before Forking please make sure to Submit a Issues with the solved problem Explained , you can start with <a href="#"> Known Issues Section </a>
+before Forking please make sure to Submit a Issues with the solved problem Explained , you can start with <a href="https://github.com/KianMehrabi/weathery_web/tree/main?tab=readme-ov-file#known-issues"> Known Issues Section </a>
 
 &nbsp;
 
