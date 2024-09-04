@@ -17,7 +17,10 @@ def factorial_with_cache(request, n):
         result = 1
         for i in range(1, n + 1):
             result *= i
-        cache.set(f"factorial_{n}", result, 60)  # Cache for 60 seconds
+        
+        Hours = 2
+        cache.set(f"factorial_{n}", result, 60 * 60 * ( Hours ))  # Cache for 2 hours 
+        # you can change the hourse variable to anything you want
 
     return HttpResponse(f"Factorial of {n} is: {result}")
 

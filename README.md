@@ -182,4 +182,4 @@ before Forking please make sure to Submit a Issues with the solved problem Expla
 - no actual website 
 
 # like this project ?
-make sure to __star__ this __repo__ 🙏
+make sure to **__SMASH__** that __star__ button!!! 🙏
