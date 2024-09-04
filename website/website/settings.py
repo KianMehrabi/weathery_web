@@ -131,7 +131,7 @@ CACHES = {
     },
     "redis": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/",  # Replace with your Redis server info
+        "LOCATION": "redis://127.0.0.1:6380/",  # Replace with your Redis server info
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },

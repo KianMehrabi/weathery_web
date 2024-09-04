@@ -1,22 +1,28 @@
-"""
-URL configuration for website project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
 
+
+from django.core.cache import cache
+from django.http import HttpResponse
+
+
+def factorial_with_cache(request, n):
+    n = int(n)
+
+    # Check if the result is already in the cache
+    result = cache.get(f"factorial_{n}")
+
+    if result is None:
+        # If not in the cache, calculate the factorial
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        cache.set(f"factorial_{n}", result, 60)  # Cache for 60 seconds
+
+    return HttpResponse(f"Factorial of {n} is: {result}")
+
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("factorial/<int:n>/", factorial_with_cache, name="factorial_with_cache"),
 ]
