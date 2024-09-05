@@ -49,8 +49,16 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_extensions",
+    
     # apps
     "core",
+    "api",
+    
+    # frameworks
+    "rest_framework",
+    
+    # frontend frameworks
+    "bootstrap5"
 ]
 
 MIDDLEWARE = [
@@ -80,6 +88,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = "website.wsgi.application"
 
@@ -153,3 +163,7 @@ CACHES = {
 
 # Use the Redis cache as the default cache
 CACHES["default"] = CACHES["redis"]
+
+
+# website url change it in production to the your url or else it wont work
+WEBSITE_BASE_URL = "http://127.0.0.1:8000/"

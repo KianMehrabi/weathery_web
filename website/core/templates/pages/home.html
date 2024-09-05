@@ -6,13 +6,97 @@ Home Page
 
 
 {% block Content %}
-<h1>
-    this is home page
-</h1>
-<hr>
-<a href="{% url 'weather' %}">
-    <h3>
-        link to Weather page
-    </h3>
-</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<div class="container">
+    <div class="d-flex flex-wrap justify-content-center pt-1 pl-2 pr-2">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h1>
+                        Django weather API wraper Service With Great Documentation
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="d-flex flex-wrap justify-content-center pt-4 pl-2 pr-2">
+        <div class="row">
+            <canvas id="myChart" style="width:1150px"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+    let website_base_url = "http://127.0.0.1:8000"
+
+    // please enter "/" at end and start of the url you want to add to website_base_url !
+    // or else it would give a error with "There was a problem with the fetch operation"
+    getData();
+
+    async function getData() {
+        const response = await fetch(website_base_url + "/api/weather/");
+        const data = await response.json();
+
+        let minData = [];
+        let maxData = [];
+        for (i = 0; i < 15; i++) {
+            minData.push(data[i].tempmin);
+            maxData.push(data[i].tempmax);
+        }
+        let xValues = [];
+        for (i = 0; i < 15; i++) {
+            if (i == 0) {
+                xValues.push("today")
+            }
+            else {
+                xValues.push("day " + (i + 1))
+            }
+        }
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    data: minData,
+                    borderColor: "blue",
+                    fill: false
+                }, {
+                    data: maxData,
+                    borderColor: "green",
+                    fill: false
+                }]
+            },
+            options: {
+                legend: { display: false }
+            }
+        });
+    }
+    const DATA_COUNT = 7;
+    const NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
+
+    const labels = Utils.months({ count: 7 });
+    const data = {
+        labels: labels,
+        datasets: [
+            {
+                label: 'Dataset 1',
+                data: Utils.numbers(NUMBER_CFG),
+                borderColor: Utils.CHART_COLORS.red,
+                backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
+            },
+            {
+                label: 'Dataset 2',
+                data: Utils.numbers(NUMBER_CFG),
+                borderColor: Utils.CHART_COLORS.blue,
+                backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
+            }
+        ]
+    };
+</script>
+
+
 {% endblock %}

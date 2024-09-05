@@ -9,12 +9,45 @@
 
         {% endblock %}
     </title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
 </head>
 
 <body>
+    <!-- Header -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4">Weathery Web</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </header>
+    </div>
     {% block Content %}
 
     {% endblock %}
+    <!-- Footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        </footer>
+    </div>
 </body>
 
 </html>
