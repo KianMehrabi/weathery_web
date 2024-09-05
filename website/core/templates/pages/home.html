@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block Title %}
+Home Page
+{% endblock %}
+
+
+{% block Content %}
+<h1>
+    this is home page
+</h1>
+<hr>
+<a href="{% url 'weather' %}">
+    <h3>
+        link to Weather page
+    </h3>
+</a>
+{% endblock %}
