@@ -1,9 +1,7 @@
-# what is weathery_web ?
+# what is weathery web ?
 A **django** weather API wrapper service for __Users__ and __Data Scientists__  
 
-___picture( main website url )
-
-___picture( showing the lsp support )
+<img src="images/home_page.png" alt="Home Page Of The WebSite">
 
 ## Intro
 this project is meant to make Extracting the __data from an Weather DataBase__ or Making a 
@@ -27,6 +25,8 @@ ___picture( of the charts )
 ### documentation
 * more detail on the __url( the git hub page )afisioal documentation of Weathery_web
 * for more detail on API check the __url( the git hub page )API documentation
+<img src="images/api_page.png" alt="a simple API of the website">
+
 
 # Requirements
 here is some requirements for installing this project ( with some helpfull links ):
